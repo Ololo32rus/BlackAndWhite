@@ -71,12 +71,6 @@ namespace BlackAndWhite
 
             }
 
-            Console.Clear();
-
-            Console.SetCursorPosition(0, 0);
-            Console.WriteLine("You are died");
-            Console.Write($"Final HP:{whiteFace.HP} Count Eaten:{countEaten}");
-
         }
 
         private void InitBlackFaces()
@@ -113,6 +107,12 @@ namespace BlackAndWhite
                             break;
                         }
                     }
+
+                    Console.Clear();
+
+                    Console.SetCursorPosition(0, 0);
+                    Console.WriteLine("You are died");
+                    Console.Write($"Final HP:{whiteFace.HP} Count Eaten:{countEaten}");
 
                 } while (isCollision == true);
             }
